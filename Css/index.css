@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Rosarivo:ital@1&display=swap');/* font-family: 'Marck Script', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-offset: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-image:  url(../BackgroundImages/newBackground.jpg)  ;
+    background-color: black;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0px -100px 50px #b0b0b0 inset; */
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: none; /* aquamarine */
+    position:fixed;
+    z-index: 100;
+}
+header nav{
+    background-color: none; /* green */
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 5vw;
+    z-index: 100;
+    white-space: nowrap;
+
+    background-color: rgba(155, 155, 155, 0.1);    /* make it glassy background */
+    box-shadow: 2rem, 2rem, 5rem, rgba(155, 155, 155, 0.5);
+    backdrop-filter: blur(15px);    /* pshtakay blur(narun),(talkh) dakat */
+}
+header nav .right_nav_part a{
+    background-size: 35px 35px;
+    background-position: center;
+    padding: 10px 35px;
+    border: .18rem solid white;
+    border-radius: 25%;
+    margin: 0vh 2vw;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+header nav .left_nav_part a , header nav p{
+    background-size: 35px 35px;
+    background-position: center;
+    padding: 10px 35px;
+    border: .18rem solid white;
+    border-radius: 25%;
+    margin: 0vh 2vw;
+    font-size: 2rem;
+}
+header nav .left_nav_part a, header nav p{
+    color: white;
+}
+header nav a:hover, header nav p:hover { /* damanawet nav'aka bgoren katek click'y lasar dakain */
+    transition: ease-out 0.5s;
+    color: black;
+    margin: 0vh 2vw;
+    border: white solid 0.3rem;
+    text-decoration: underline;
+    box-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+    background-color: white;
+}
+ul li{
+    display: block;
+    list-style: none;
+    position: relative;
+    cursor: default;
+}
+ul li ul li a{
+    display: block;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+display: block;
+}
+ul li ul li{
+    position: absolute;
+    top: 100%;
+}
+ul li ul li:nth-child(1){ top: 100%;}
+ul li ul li:nth-child(2){ top: 200%}
+ul li ul li:nth-child(3){ top: 300%}
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    background-size: 1545px 800px;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+#news1{
+    height: 25vh;
+    width: 35vw;
+    align-self: center;
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    color:black ; /* latter add fonts */
+    font-family: 'Rosarivo', serif;  
+    text-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+}
+#hover_logo{
+    width: 40vw;
+    margin-top: 15vh;
+    height: 5vw;
+    text-align: center;
+}
+.home_hover{
+    background-color: rgba(63, 62, 63, 0.1);    /* make it glassy background */
+    box-shadow: 2rem, 2rem, 5rem, rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    display: none;
+    font-family: 'Rosarivo', serif;
+}
+.logo{
+    width: 12vw;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.34);
+    position: absolute;
+    right: 8vw;
+    top: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-image: url(../category_image/NewsTimes-logos_white.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* lerawa section'y newest'a    */
+/*----------------------------------------*/
+
+
+
+.Newest_section{
+    background-color: #b0b0b0  ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    box-shadow: 0 50px 25px #545454 inset;
+}
+#newest{
+    margin-top: 8vh;
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    color: white;
+}
+#newest hr{
+    width: 25vw;
+    height: 1%;
+    background-color: white;
+    border: none;
+}
+section #image-change {
+    width: 70vw;
+    height: 55vh;
+    margin-top: 3vh;
+    background-image: url(../images/1.jpg);
+    cursor: pointer;
+    margin-bottom: 1vh;
+    background-size: 100% 100%; /* background-size: cover; is better but it won't show the whole image */
+    background-position:top;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px white,
+    0 0 25px white;
+}
+
+section #heading{ /* au nusinay la sectiony newst ba dyar akauet la katy hover'a */
+    text-shadow: 0 0 5px #4d6aaf,
+    0 0 25px #4d6aaf,
+    0 0 50px #4d6aaf,
+    0 0 100px #4d6aaf;
+    color: white;
+    background-color: #334756;
+    margin-top: 25vh;
+    margin-left: 5vw;
+    z-index: 50;
+    top: 40vh;
+    right: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    display: none;
+    font-weight: bold;
+}
+section p { 
+    position: relative;
+    z-index: 50;
+    top: -19vh;
+    margin-left: -12vw;
+    font-size: 1vw;
+    width: 35vw;
+    height: 3.5vw;
+    text-shadow: 0 0 5px #4d6aaf,
+    0 0 25px #4d6aaf,
+    0 0 50px #4d6aaf,
+    0 0 100px #4d6aaf;
+    color: white;
+    background-color: #334756;
+    display: none;
+} 
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 39vw;
+    height: auto;
+    align-items: center;
+    justify-content:space-around;
+    margin-left: 25vw;
+}
+.buttons #radio_button{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   height: 100%;
+}
+.buttons input{
+    pointer-events: none; /* taku radio button'akan click'yan lasar nakret */
+}
+.buttons button{
+    color: white;
+    margin: 0.5rem 2rem;
+    border: Blue solid 0.3rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.5vw;
+    box-shadow: 0 0 5px #034bf4,
+    0 0 25px #034bf4,
+    0 0 50px #034bf4,
+    0 0 100px #034bf4;
+    background-color: #034bf4;
+    border: 5px;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+}
+#image_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.buttons button:active{ /* aukatay click'y ledakain damanawet bchuk betawa */
+    transition-duration: .3s;
+    color: white;
+    margin: 0.5rem 2rem;
+    border: Blue solid 0.3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5vw;
+    box-shadow: 0 0 5px #034bf4,
+    0 0 25px #034bf4,
+    0 0 50px #034bf4,
+    0 0 100px #034bf4;
+    background-color: #034bf4;
+    border: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.buttons button:hover{
+    transition-duration: .3s;
+    color: blue;
+    margin: 0.5rem 2rem;
+    border: white solid 0.3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5vw;
+    box-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+    background-color: white;
+    border: 5px;
+    cursor: pointer;
+    outline: none;
+}
+/*  leraua category section'a */
+/*-----------------------------------*/
+
+
+
+
+
+.category-section{
+    background-color: #203239;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#newest-category{
+    margin-top: 8vh;
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    color: antiquewhite;
+}
+#newest-category hr{
+    width: 25vw;
+    height: 1%;
+    background-color: antiquewhite;
+    border: none;
+}
+#category-change{
+    width: 80vw;
+    height: 60vh;
+    margin-top: 3vh;
+    background-color: rgba(0, 0, 0, 0.43);
+    cursor: pointer;
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#category-change a{
+    width: 100%;
+    height: 100%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: white;
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+    background-color: unset;
+    background-size: cover;
+    background-position:center;
+
+}
+#category-change a h6{
+    transform: rotate(90deg);
+    margin-top: 80px;
+    color: black;
+    background-color: antiquewhite;
+    text-decoration: underline;
+}
+#category-change a:hover{width: 300%;
+display: flex;
+flex-direction: row;    transition: ease-in-out .5s;
+}
+#category-change a:hover > #category-change a:not(:hover){width: -150%; transition: ease-in-out .5s;}
+#category-change a:hover  h6{transform: rotate(0deg); margin-bottom: 1vh; transition: ease .5s; /* transform bo gorini rotate bakardet shtikash
+    taku salamat bit search'y bo bka. */
+background-color: black;
+color: antiquewhite;}
+
+
+#category-change a:nth-child(1){  background-image: url(../category_image/sports.jpg); }
+#category-change a:nth-child(2){ background-image: url(../category_image/politicsjpg.jpg);  }
+#category-change a:nth-child(3){ background-image: url(../category_image/historyjpg2.jpg); }
+#category-change a:nth-child(4){ background-image: url(../category_image/books2jpg.jpg); }
+#category-change a:nth-child(5){ background-image: url(../category_image/musicjpg.jpg); }
+#category-change a:nth-child(6){ background-image: url(../category_image/movie.jpg); }
+
+
+
+
+/* the footer is done */
+/*------------------------------*/
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(22, 22, 22);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div{
+    width: 90vw;
+    height: 40vh;
+   color: white;
+}
+#data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#email_number{
+    width: 25vw;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+#email_number a {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: rgb(103, 99, 99);
+    text-decoration: none;
+
+}
+#email_number a p {
+    color: rgb(49, 48, 48);
+    text-decoration: underline;
+}
+#email_number a:hover{
+    color: white;
+}
+#account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 22vh;
+    font-size: large;
+}
+#account a{
+    font-size: large;
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(103, 99, 99);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#parts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 22vh;
+    font-size: large;
+}
+#parts a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(103, 99, 99);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#parts a:hover , #account a:hover{ color: white;   }
+#account a img , #email_number a img {
+    width: 20px;
+    height: 20px;
+}
+#email_number a img{    margin-right: 15px; }
+@media (max-width: 1200px){
+    section p { 
+        font-size: 1.5vw;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    header nav .left_nav_part, nav .right_nav_part{
+        width: 70vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header nav .left_nav_part a ,header nav p{
+        font-size: 2.5vw;
+        padding: 0.5vw 2vw;
+    }
+    header nav .right_nav_part a{
+        padding: 0.5vw 2vw;
+        font-size: 2.5vw;
+    }
+    #hover_logo{
+        width: 40vw;
+        margin-top: 0vw;
+        height: 15vw;
+    }
+    .home_hover{
+        font-size: 2.5vw;
+        }
+        #newest, #newest-category{
+            width: 45vw;
+            font-size: 10vw;
+        }
+        #newest hr{
+            width: 35vw;
+        }
+        section #heading{ /* au nusinay la sectiony newst ba dyar akauet la katy hover'a */
+            margin-left: 20vw;
+            font-size: 3vw;
+             }
+        section p { 
+            font-size: 2vw;
+            width: 45vw;
+            height: 5vw;
+            top: -15vw;
+        } 
+        #newest-category hr{
+            width: 40vw;
+        }
+
+
+        .category-section{
+            height: 150vh;
+        }
+        #category-change{
+            height: 40vw;
+            margin-top: 35vh;
+            flex-direction: column;
+            align-items: center;
+        }
+        #category-change a{
+            width: 100%;
+            height: 150%;
+            align-items: flex-start;
+        
+        }
+        #category-change a h6{
+            transform: rotate(90deg);
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        #category-change a:hover{
+            width: 100%;
+        }
+        #category-change a:hover > #category-change a:not(:hover){width: 150%;}
+        #category-change a:hover  h6{transform: rotate(0deg); margin: 100px 0 100px 20px; 
+        
+        }
+        footer{
+            height: 90vh;
+            padding: 10vw 2vw;
+        }
+        footer div{
+            display: flex;
+            flex-direction: column;
+            height: 105%;
+            width: 100%;
+        }
+        #data{
+            flex-direction: column;
+            margin-top: 15vw;
+        }
+        
+        
+        #account, #email_number{
+            width: 100vw;
+            margin-bottom: 10vw;
+        }
+        .logo{
+            width: 10vh;
+            height: 7vh;
+            top: 80vw;
+        }
+        #home{
+            height: 150vw;
+        }
+        #news1{
+            margin-top: 35vw;
+            height: 20vw;
+        }
+        html{
+            background-color: rgb(22, 22, 22);
+        }
+}

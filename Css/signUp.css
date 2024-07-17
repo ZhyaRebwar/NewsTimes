@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Rosarivo:ital@1&display=swap');/* font-family: 'Marck Script', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-offset: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: none; /* aquamarine */
+    z-index: 100;
+}
+header nav{
+    background-color: none; /* green */
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 5vw;
+    z-index: 100;
+    white-space: nowrap;
+
+    background-color: rgba(95, 94, 95, 0.1);    /* make it glassy background */
+    box-shadow: 2rem, 2rem, 5rem, rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+}
+header nav a, header nav p{
+    color: black;
+    margin: 0vh 2vw;
+    border: .18rem solid black;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5vw 2vw;
+    border-radius: 25%;
+}
+/*  -------------------------------------- */
+ul li{
+    display: block;
+    list-style: none;
+    position: relative;
+    cursor: default;
+}
+ul li ul li a{
+    display: block;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+display: block;
+}
+ul li ul li{
+    position: absolute;
+    top: 100%;
+}
+ul li ul li:nth-child(1){ top: 100%;}
+ul li ul li:nth-child(2){ top: 200%}
+ul li ul li:nth-child(3){ top: 300%}
+/* ----------------------------------------------- */
+header nav a:hover , header nav p:hover{ /* damanawet nav'aka bgoren katek click'y lasar dakain */
+    transition: ease-out 0.5s;
+    color: white;
+    margin: 0vh 2vw;
+    border: black solid 0.3rem;
+    text-decoration: underline;
+    box-shadow: 0 0 5px black,
+    0 0 25px black,
+    0 0 50px black,
+    0 0 100px black;
+    background-color: black;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: 1545px 800px;
+    overflow: hidden;
+    background-image:   linear-gradient( rgba(255, 255, 255, 0.25) , rgba(0,0,0,8))  ,url(../BackgroundImages/maxresdefault.jpg)  ; /* change the picture + make it darker. */
+    background-size:  100% 100%;
+}
+.accountBox{
+    width: 40vw;
+    height: 70vh;
+    margin-top: 35px;
+    background-color: rgba(252, 226, 193, 0.25);
+    background-image: linear-gradient( 150deg, rgba(255, 255, 255, 0.25) , rgba(0,0,0,8))  ,url(../BackgroundImages/pattern-texture-mandala-green-wallpaper-preview.jpg);
+    box-shadow: .2rem .2rem 5rem white,
+    -.2rem -.2rem 10rem white,
+    .2rem .2rem 15rem white;
+    border-radius: 20px;
+}
+.signUp{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.signUp a{
+    width: 100px;
+    height: 100px;
+    /* background-color: chocolate; */
+    border-radius: 50%;
+}
+.signUp a img{
+    width: 100px;
+    height: 100px;
+}
+.signUp a:hover {
+    /* background-color: yellowgreen; */
+    background-color: white;
+    box-shadow: .2rem .2rem 5rem white,
+    -.2rem -.2rem 10rem white,
+    .2rem .2rem 15rem white;
+    transition: .5s ease-in-out;
+}
+.signUp h1{
+    color: white;
+    width: 8vw;
+    text-align: center;
+    border-radius: 20px;
+}
+.signUp h1:hover{
+    background-color: rgba(0, 0, 0, 0.355);
+    box-shadow: .2rem .2rem 5rem white,
+    -.2rem -.2rem 10rem white,
+    .2rem .2rem 15rem white;
+    transition: .5s ease-in-out;
+}
+#data{
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#email{
+    background-color: white;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center; /* taku au nusinay teyda daykain la nawarasty bikat. */
+}
+#email::placeholder{
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Marck Script', cursive;
+    font-size: large;
+    text-decoration: underline;
+}
+#email:hover::placeholder{   /* wata katek hover abet placeholder wa lebka.*/
+    text-decoration: none;
+}
+#email:enabled{
+    outline: none;  /* hely chwar dawry nahelet katy click krdn lasary. */
+}
+.password , #phoneNumber{
+    background-color: white;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center; /* taku au nusinay teyda daykain la nawarasty bikat. */
+}
+.password::placeholder, #phoneNumber::placeholder{
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Marck Script', cursive;
+    font-size: large;
+    text-decoration: underline;
+}
+.password:hover::placeholder, #phoneNumber:hover::placeholder{   /* wata katek hover abet placeholder wa lebka.*/
+    text-decoration: none;
+}
+.password:enabled , #phoneNumber:enabled{
+    outline: none;
+}
+#data a{
+    position: relative;
+    bottom: 5px;
+    right: -13.5vw;
+    color: white;
+    text-decoration: none;
+}
+#data a:hover{
+    background-color: white;
+    box-shadow: .2rem .2rem .5rem white,
+    -.2rem -.2rem .10rem white,
+    .2rem .2rem .15rem white;
+    color: black;
+    text-decoration: underline;
+}
+button{
+    margin-top: 20px;
+    width: 80%;
+    border: none;
+    background-color: white;
+    color: black;
+    height: 30px;
+    border-radius: 200%;    /* katek la 100% zyatr dabet pechawana dabetaua bonawawa daruat */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Marck Script', cursive;
+    cursor: pointer;
+    font-size: large;
+    font-weight:bolder;
+}
+button:hover{
+    background-color: black;
+    box-shadow: .2rem .2rem .5rem goldenrod,
+    -.2rem -.2rem .10rem goldenrod,
+    .2rem .2rem .15rem goldenrod;
+    color: goldenrod;
+    transition: .3s ease-in-out;
+}
+button:active {
+    background-color: white;
+    box-shadow: .2rem .2rem .5rem black,
+    -.2rem -.2rem .10rem black,
+    .2rem .2rem .15rem black;
+    color: black;
+    transition: .3s ease-in-out;
+}
+@media screen and (max-width: 860px) {
+    .signUp h1{
+        font-size: medium;
+    }
+    #data a{
+        right: -11vw;
+    }
+}
+@media screen and (max-width:685px) {
+    .signUp h1{
+        font-size: small;
+    }
+    #data a{
+        right: 0vw;
+    }
+}
+@media screen and (max-width:556px) {
+    .accountBox{
+        width: 90vw;
+    }
+    .signUp a img, .signUp a{
+        width: 70px;
+        height: 70px;
+    }
+    .signUp h1{
+        width: 50px;
+    }
+    #email, .password, #phoneNumber{
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width:540px) {   /* just for the top buttons   usable for all pages */
+    header nav a , header nav p{
+        font-size: 1.2rem;
+        margin: 0px 2px;
+    }
+}

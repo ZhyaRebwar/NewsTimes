@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Rosarivo:ital@1&display=swap');/* font-family: 'Marck Script', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-offset: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: none; /* aquamarine */
+    z-index: 100;
+}
+header nav{
+    background-color: none; /* green */
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 5vw;
+    z-index: 100;
+    white-space: nowrap;
+
+    background-color: rgba(95, 94, 95, 0.1);    /* make it glassy background */
+    box-shadow: 2rem, 2rem, 5rem, rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+}
+header nav a, header nav p{
+    color: black;
+    margin: 0vh 2vw;
+    border: .18rem solid black;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5vw 2vw;
+    border-radius: 25%;
+}
+/*  -------------------------------------- */
+ul li{
+    display: block;
+    list-style: none;
+    position: relative;
+    cursor: default;
+}
+ul li ul li a{
+    display: block;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+display: block;
+}
+ul li ul li{
+    position: absolute;
+    top: 100%;
+}
+ul li ul li:nth-child(1){ top: 100%;}
+ul li ul li:nth-child(2){ top: 200%}
+ul li ul li:nth-child(3){ top: 300%}
+/* ----------------------------------------------- */
+header nav a:hover , header nav p:hover{ /* damanawet nav'aka bgoren katek click'y lasar dakain */
+    transition: ease-out 0.5s;
+    color: white;
+    margin: 0vh 2vw;
+    border: black solid 0.3rem;
+    text-decoration: underline;
+    box-shadow: 0 0 5px black,
+    0 0 25px black,
+    0 0 50px black,
+    0 0 100px black;
+    background-color: black;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: 1545px 800px;
+    overflow: hidden;
+    background-size:  cover;
+    background-position: center;
+}
+h1{
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.392);
+    color: black;
+    border-radius: 20px;
+    padding: 0px 15px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#category{
+    margin-top: 80px;
+    width: 90vw;
+    height: 65vh;
+    /* background-color: rgba(0, 0, 0, 0.296); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.specific{
+    width: 30vw;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(50, 50, 69, 0.482);
+    border-radius: 10px;
+    padding: 20px;
+}
+iframe{
+   width: 50vw;
+   height: 100%;
+   background-image: url(../BackgroundImages/newspaper.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.specific h1{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3rem;
+}
+.specific a{
+    background-color: rgba(255, 255, 255, 0.723);
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: large;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+@media screen and (max-width:580px) {
+    body{
+        overflow-y: auto;
+    }
+    #category{
+        width: 400px;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .specific{
+        width: 400px;
+        height: 600px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:425px) {
+    body{
+        overflow-y: auto;
+    }
+    #category{
+        width: 300px;
+        height: 150vh;
+    }
+    iframe{
+        width: 100%;
+    }
+    .specific{
+        width: 300px;
+        height: 500px;
+    }
+}
+@media screen and (max-width:540px) {   /* just for the top buttons   usable for all pages */
+    header nav a , header nav p{
+        font-size: 1.2rem;
+        margin: 0px 2px;
+    }
+}
